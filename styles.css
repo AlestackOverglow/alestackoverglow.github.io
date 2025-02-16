@@ -286,6 +286,7 @@ footer {
 }
 
 .cat.walking {
+    -webkit-animation: bounce 0.5s infinite;
     animation: bounce 0.5s infinite;
 }
 
@@ -348,12 +349,14 @@ footer {
 .cat-ear.left {
     transform: rotate(-30deg);
     left: -2px;
+    -webkit-animation: ear-twitch-left 4s infinite;
     animation: ear-twitch-left 4s infinite;
 }
 
 .cat-ear.right {
     transform: rotate(30deg);
     right: -2px;
+    -webkit-animation: ear-twitch-right 4s infinite;
     animation: ear-twitch-right 4s infinite;
 }
 
@@ -363,6 +366,7 @@ footer {
     background: var(--primary-color);
     border-radius: 50%;
     top: 10px;
+    -webkit-animation: blink 4s infinite;
     animation: blink 4s infinite;
     transition: transform 0.2s ease;
 }
@@ -420,6 +424,7 @@ footer {
     bottom: 15px;
     border-radius: 4px 8px 8px 4px;
     transform-origin: left center;
+    -webkit-animation: tail-wave 2s infinite;
     animation: tail-wave 2s infinite;
     box-shadow: inset -2px -2px 0 rgba(0, 0, 0, 0.1);
 }
@@ -521,18 +526,22 @@ footer {
 }
 
 .cat:hover .cat-tail {
+    -webkit-animation: happy-tail 0.5s infinite;
     animation: happy-tail 0.5s infinite;
 }
 
 .cat.walking .cat-body {
+    -webkit-animation: walk-body 0.5s infinite;
     animation: walk-body 0.5s infinite;
 }
 
 .cat.walking .cat-paw {
+    -webkit-animation: paw-walk 0.5s infinite;
     animation: paw-walk 0.5s infinite;
 }
 
 .cat.walking .cat-tail {
+    -webkit-animation: tail-walk 0.5s infinite;
     animation: tail-walk 0.5s infinite;
 }
 
@@ -677,6 +686,7 @@ footer {
     pointer-events: none;
     opacity: 0.6;
     z-index: 999;
+    -webkit-animation: fade-out 2s forwards;
     animation: fade-out 2s forwards;
 }
 
