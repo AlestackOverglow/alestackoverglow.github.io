@@ -678,11 +678,13 @@ footer {
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
+        width: 100%;
     }
 
     .container {
         padding: 0 10px;
         overflow-x: hidden;
+        width: 100%;
     }
 
     .profile-section {
@@ -692,11 +694,13 @@ footer {
         gap: 15px;
         padding: 0;
         max-width: 100%;
+        width: 100%;
     }
 
     .profile-info {
         width: 100%;
         max-width: 100%;
+        padding: 0;
     }
 
     .profile-image {
@@ -707,6 +711,7 @@ footer {
 
     header {
         padding: 20px 0;
+        width: 100%;
     }
 
     header h1 {
@@ -714,6 +719,7 @@ footer {
         margin-bottom: 15px;
         width: 100%;
         display: block;
+        word-wrap: break-word;
     }
 
     .contact-info {
@@ -721,10 +727,17 @@ footer {
         align-items: center;
         gap: 10px;
         margin: 15px 0;
+        width: 100%;
     }
 
     .email-link, .github-link, .telegram-link {
         font-size: 0.9rem;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: auto;
+        padding: 0 10px;
     }
 
     .about-section {
@@ -732,15 +745,24 @@ footer {
         padding: 0 10px;
         margin: 0;
         max-width: 100%;
+        box-sizing: border-box;
     }
 
     .about-section p {
         font-size: 0.9rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0 0 15px 0;
     }
 
     .tech-stack {
         width: 100%;
         margin-top: 15px;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
 
     .tech-icons {
@@ -749,16 +771,6 @@ footer {
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
-    }
-
-    .tech-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .repositories-grid {
-        grid-template-columns: 1fr;
-        padding: 10px 0;
     }
 }
 
@@ -774,15 +786,24 @@ footer {
 
     header h1 {
         font-size: 1.5rem;
+        padding: 0 5px;
     }
 
     .about-section p {
         font-size: 0.85rem;
+        line-height: 1.4;
+        padding: 0 5px;
+    }
+
+    .email-link, .github-link, .telegram-link {
+        font-size: 0.85rem;
+        padding: 0 5px;
     }
 
     .about-section h2,
     .tech-stack h2 {
         font-size: 1.2rem;
+        padding: 0 5px;
     }
 
     .tech-icons {
