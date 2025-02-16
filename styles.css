@@ -69,50 +69,69 @@
         align-items: center;
         text-align: center;
         gap: 20px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .profile-info {
+        width: 100%;
+        padding: 0 10px;
     }
 
     .profile-image {
         width: 120px;
         height: 120px;
+        margin: 0 auto;
     }
 
     .about-section {
         margin: 0 auto;
+        width: 100%;
+        padding: 0;
     }
 
     header {
         padding: 20px 0;
+        width: 100%;
     }
 
     header h1 {
         font-size: 1.8rem;
+        word-break: break-word;
+        hyphens: auto;
+        width: 100%;
     }
 
     .contact-info {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        margin: 15px 0;
     }
 
     .email-link, .github-link, .telegram-link {
         font-size: 0.9rem;
+        width: 100%;
+        justify-content: center;
     }
 
-    .email-link i, .github-link i, .telegram-link i {
-        font-size: 1rem;
+    .tech-stack {
+        width: 100%;
+        margin-top: 15px;
     }
 
-    .about-section p {
-        font-size: 0.9rem;
-        padding: 0 10px;
-    }
-
-    .repositories-grid {
-        grid-template-columns: 1fr;
+    .tech-icons {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
     .profile-image {
         width: 100px;
         height: 100px;
@@ -120,15 +139,28 @@
 
     header h1 {
         font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
-    .contact-info {
-        flex-direction: column;
-        gap: 8px;
+    .about-section p {
+        font-size: 0.85rem;
+        line-height: 1.4;
     }
 
-    .about-section h2, .tech-stack h2 {
-        font-size: 1.3rem;
+    .about-section h2, 
+    .tech-stack h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .tech-icons {
+        grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+        gap: 4px;
+    }
+
+    .tech-icon {
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -148,7 +180,9 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header {
