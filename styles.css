@@ -22,6 +22,7 @@
     border: 4px solid var(--secondary-color);
     box-shadow: 0 4px 15px rgba(216, 135, 157, 0.2);
     position: relative;
+    -webkit-animation: profile-glow 3s ease-in-out infinite;
     animation: profile-glow 3s ease-in-out infinite;
 }
 
@@ -31,6 +32,7 @@
     inset: -4px;
     background: linear-gradient(45deg, var(--secondary-color), #ff9eb5, var(--secondary-color));
     background-size: 200% 200%;
+    -webkit-animation: gradient-rotate 3s linear infinite;
     animation: gradient-rotate 3s linear infinite;
     border-radius: 50%;
     z-index: -1;
@@ -113,6 +115,7 @@ header h1 {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    -webkit-animation: gradient 3s ease infinite;
     animation: gradient 3s ease infinite;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
