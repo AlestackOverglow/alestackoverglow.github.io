@@ -63,107 +63,6 @@
     flex: 1;
 }
 
-@media (max-width: 768px) {
-    .profile-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        padding: 0;
-        width: 100%;
-    }
-
-    .profile-info {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .profile-image {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto;
-    }
-
-    .about-section {
-        margin: 0 auto;
-        width: 100%;
-        padding: 0;
-    }
-
-    header {
-        padding: 20px 0;
-        width: 100%;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-        word-break: break-word;
-        hyphens: auto;
-        width: 100%;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-        margin: 15px 0;
-    }
-
-    .email-link, .github-link, .telegram-link {
-        font-size: 0.9rem;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .tech-stack {
-        width: 100%;
-        margin-top: 15px;
-    }
-
-    .tech-icons {
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 10px;
-    }
-
-    .profile-image {
-        width: 100px;
-        height: 100px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-    }
-
-    .about-section p {
-        font-size: 0.85rem;
-        line-height: 1.4;
-    }
-
-    .about-section h2, 
-    .tech-stack h2 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
-
-    .tech-icons {
-        grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
-        gap: 4px;
-    }
-
-    .tech-icon {
-        width: 35px;
-        height: 35px;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -776,23 +675,139 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 0 10px;
+        overflow-x: hidden;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .profile-info {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        width: 100%;
+        display: block;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 15px 0;
+    }
+
+    .email-link, .github-link, .telegram-link {
+        font-size: 0.9rem;
+    }
+
+    .about-section {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+    }
+
+    .tech-stack {
+        width: 100%;
+        margin-top: 15px;
+    }
+
     .tech-icons {
         grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-        gap: 4px;
+        gap: 5px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .tech-icon {
         width: 40px;
         height: 40px;
-        padding: 3px 2px;
+    }
+
+    .repositories-grid {
+        grid-template-columns: 1fr;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 8px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 0.85rem;
+    }
+
+    .about-section h2,
+    .tech-stack h2 {
+        font-size: 1.2rem;
+    }
+
+    .tech-icons {
+        grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
+        gap: 4px;
+    }
+
+    .tech-icon {
+        width: 35px;
+        height: 35px;
     }
 
     .tech-icon i {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .tech-icon span {
-        font-size: 0.55rem;
+        font-size: 0.5rem;
+    }
+
+    .repo-card {
+        padding: 15px;
+    }
+
+    .repo-card h3 {
+        font-size: 1.1rem;
     }
 } 
