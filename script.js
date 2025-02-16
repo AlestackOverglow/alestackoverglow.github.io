@@ -85,8 +85,8 @@ document.addEventListener('mousemove', (e) => {
     
     const elements = document.elementsFromPoint(e.clientX, e.clientY);
     
-    // Проверяем, не навели ли мы на самого котика
-    if (elements[0].classList.contains('cat')) return;
+    // Проверяем, есть ли элементы и не навели ли мы на самого котика
+    if (elements.length > 0 && elements[0].classList && elements[0].classList.contains('cat')) return;
     
     const targetElement = elements.find(el => 
         el.classList.contains('repo-card') || 
