@@ -68,15 +68,67 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 20px;
     }
 
     .profile-image {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
 
     .about-section {
         margin: 0 auto;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .email-link, .github-link, .telegram-link {
+        font-size: 0.9rem;
+    }
+
+    .email-link i, .github-link i, .telegram-link i {
+        font-size: 1rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .repositories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .about-section h2, .tech-stack h2 {
+        font-size: 1.3rem;
     }
 }
 
@@ -223,20 +275,6 @@ footer {
     border-top: 1px solid rgba(216, 135, 157, 0.1);
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 40px 0;
-    }
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .repositories-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .contact-info {
     margin-bottom: 20px;
     display: flex;
@@ -261,13 +299,6 @@ footer {
 
 .email-link i, .github-link i, .telegram-link i {
     font-size: 1.2rem;
-}
-
-@media (max-width: 768px) {
-    .contact-info {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
 }
 
 .cat {

@@ -89,11 +89,13 @@ document.addEventListener('mousemove', (e) => {
     if (elements.length > 0 && elements[0].classList && elements[0].classList.contains('cat')) return;
     
     const targetElement = elements.find(el => 
-        el.classList.contains('repo-card') || 
-        el.tagName === 'H1' || 
-        el.classList.contains('email-link') ||
-        el.classList.contains('github-link') ||
-        el.classList.contains('telegram-link')
+        el && el.classList && (
+            el.classList.contains('repo-card') || 
+            el.tagName === 'H1' || 
+            el.classList.contains('email-link') ||
+            el.classList.contains('github-link') ||
+            el.classList.contains('telegram-link')
+        )
     );
     
     if (targetElement && targetElement !== currentTarget) {
