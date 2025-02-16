@@ -8,7 +8,8 @@ My personal portfolio website showcasing my GitHub repositories and contact info
 - Contact information (Email, GitHub, Telegram)
 - Responsive design
 - Automatic repositories loading from GitHub API
-- Effecys and animation
+- Optimized both for PC and mobiles
+- Effects and animation
 - Kitty
 
 ## Technologies Used
