@@ -574,11 +574,11 @@ footer {
 }
 
 .tech-icons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 6px;
-    justify-items: center;
     max-width: 600px;
+    justify-content: center;
 }
 
 .tech-icon {
@@ -596,6 +596,7 @@ footer {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    flex: 0 0 calc(20% - 6px); /* 5 иконок в ряду */
 }
 
 .tech-icon::before {
@@ -640,6 +641,19 @@ footer {
     text-overflow: ellipsis;
     width: 100%;
     padding: 0 2px;
+}
+
+/* Медиа-запросы для разных размеров экрана */
+@media (max-width: 768px) {
+    .tech-icon {
+        flex: 0 0 calc(25% - 6px); /* 4 иконки в ряду */
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-icon {
+        flex: 0 0 calc(33.333% - 6px); /* 3 иконки в ряду */
+    }
 }
 
 /* Следы от лапок */
