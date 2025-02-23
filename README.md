@@ -1,6 +1,9 @@
 # Portfolio Website
 
 My personal portfolio website showcasing my GitHub repositories and contact information.
+You can use it for yourself by simply changing the links to GitHub and social networks in the source code.
+
+If you find this project helpful, please consider giving it a star ⭐ It helps others discover the project and motivates further development.
 
 ## Features
 - Dark theme with elegant pink accents
